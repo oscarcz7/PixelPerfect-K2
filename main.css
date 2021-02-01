@@ -1,0 +1,372 @@
+/* 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+Font */
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+/* Design */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.page {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    margin-top: -12px;
+    margin-left: 48px;
+}
+
+.banner {
+    margin-top: 22px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    background: #0d0247;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row wrap;
+    margin-top: 20px;
+}
+
+.container-button {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: goldenrod;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+}
+
+/*
+estilos de las tarjetas
+*/
+
+.main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    color: black;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(126, 23, 23, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(56, 7, 7, 0.12);
+}
+
+.cards {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card_bottom {
+    border-top: 3px solid #e8efeb;
+    display: flex;
+    flex-direction: column;
+}
+.container_bottom{
+    margin: 0;
+    padding: 0px 1.5rem 0px 1.5rem ;
+    z-index: 2;
+    position: relative;
+    top: 30px;
+    
+}
+.card_bottom a{
+    color: #11698e;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btm_content {
+    float: left;
+}
+.icons{
+    margin:0 0 0 150px;
+    position: relative;
+    bottom: -5px;
+}
+.icon {
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+.icon img {
+    margin: 0;
+    padding: 0;
+}
+.f_noti{
+    z-index: 1;
+}
+
+.card_content {
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+.ctitle{
+    margin: 0;
+    padding: 0;
+}
+.card_title {
+    color: peru;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 1.5rem 1.2rem 0 0;
+}
+
+.card_text {
+    color: black;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+.card_subtext {
+
+    color: peru;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-top: 2.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+}
+
+/*Estilos de la grilla*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 5px;
+}
+
+.grid-container>div {
+    padding: 5px 0;
+    font-size: 30px;
+}
+
+.item1 {
+    margin: 10px 15px 0 15px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, fit-content(120px));
+    grid-template-rows: repeat(2, fit-content(120px));
+    grid-template-areas: "three four" "five six" "seven seven";
+}
+
+.item2 {
+    text-align: end;
+    
+}
+
+.btn_suscribe{
+    margin-right: 55px;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.seven p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*
+estilos del footer
+*/
+
+footer {
+    margin-top: 20rem ;
+    height: 70px;
+    align-items: center;
+    background: #0d0247;
+    color: white;
+    padding-left: 20px ;
+}
+.container_footer{
+    padding: 16px;
+}
+.container_footer p{
+    margin: 0;
+}
+
+.list_footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.list_footer a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.list_footer a::after {
+    margin: 0 10px 0 10px;
+    content: "|";
+}
+/*Medias queries*/
+@media all and (max-width: 896px) {
+    .navigation {
+        justify-content: space-around;
+    }
+    .page{
+        margin: 0;
+    }
+    
+}
+
+@media all and (max-width: 640px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+
+    .cards_item {
+        width: 50%;
+    }
+    .page{
+        margin: 0;
+    }
+    
+}
+
+@media all and (max-width: 375px) {
+    .logo{
+        display: none;
+    }
+}
+
+
+@media (min-width: 23.44rem) {
+    .cards_item {
+        width: 100%;
+    }
+    
+}
+
+
+/* 40rem -> 640 */
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+/* 40rem -> 896px */
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 48.5%;
+    }
+}
